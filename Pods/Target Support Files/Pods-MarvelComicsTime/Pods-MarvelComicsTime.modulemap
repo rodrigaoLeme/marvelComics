@@ -1,0 +1,6 @@
+framework module Pods_MarvelComicsTime {
+  umbrella header "Pods-MarvelComicsTime-umbrella.h"
+
+  export *
+  module * { export * }
+}

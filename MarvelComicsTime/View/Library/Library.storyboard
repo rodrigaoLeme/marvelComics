@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2N8-cg-R3D">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Library-->
+        <scene sceneID="MXI-Vd-vOQ">
+            <objects>
+                <viewController title="Library" id="2N8-cg-R3D" customClass="LibraryViewController" customModule="MarvelComicsTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TFp-M2-MId">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jzT-rd-QAz">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HiE-f7-f8s"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jzT-rd-QAz" firstAttribute="bottom" secondItem="HiE-f7-f8s" secondAttribute="bottom" id="OiT-gf-Uhl"/>
+                            <constraint firstItem="jzT-rd-QAz" firstAttribute="trailing" secondItem="HiE-f7-f8s" secondAttribute="trailing" id="f44-2n-fXZ"/>
+                            <constraint firstItem="jzT-rd-QAz" firstAttribute="leading" secondItem="HiE-f7-f8s" secondAttribute="leading" id="inO-Uj-xgK"/>
+                            <constraint firstItem="jzT-rd-QAz" firstAttribute="top" secondItem="HiE-f7-f8s" secondAttribute="top" id="qQp-tX-dj6"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Library" image="square.stack.fill" catalog="system" id="vym-8I-3zd"/>
+                    <navigationItem key="navigationItem" title="Library" id="XRc-1Z-5yq">
+                        <barButtonItem key="backBarButtonItem" title="Library" id="5vO-Ir-BzE"/>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="libraryTableView" destination="jzT-rd-QAz" id="Zar-wD-LMu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PZB-aJ-8Zy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="265.21739130434787" y="13.392857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="square.stack.fill" catalog="system" width="113" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
